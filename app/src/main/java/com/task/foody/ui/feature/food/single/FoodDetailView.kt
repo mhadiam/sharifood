@@ -303,10 +303,10 @@ fun CommentInput(
                     shape = RectangleShape
                 )
                 .clickable { onSendClick() }
-                .padding(vertical = 8.dp, horizontal = 16.dp)
+                .padding(vertical = 16.dp, horizontal = 24.dp)
                 ,
             text = "ارسال",
-            fontSize = 14.sp,
+            fontSize = 16.sp,
             color = MaterialTheme.colorScheme.onBackground
         )
 

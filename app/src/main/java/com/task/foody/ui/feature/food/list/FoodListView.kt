@@ -32,7 +32,9 @@ import androidx.compose.ui.composed
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.text.style.TextDirection
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -43,6 +45,7 @@ import com.task.foody.ui.database.dto.AccountType
 import com.task.foody.ui.database.dto.Food
 import com.task.foody.ui.feature.login.FoodyInputView
 import com.task.foody.ui.theme.FoodyTheme
+import com.task.foody.ui.theme.defaultTextStyle
 import java.text.DecimalFormat
 import java.text.NumberFormat
 import java.util.Locale
@@ -369,7 +372,8 @@ fun FoodItem(
                 }
                 .padding(16.dp),
             text = "${price.toString().separateNumber()} تومان",
-            fontSize = 18.sp,
+            style = defaultTextStyle.copy(textDirection = TextDirection.Rtl),
+            fontSize = 20.sp,
             color = MaterialTheme.colorScheme.onBackground,
         )
 
@@ -381,7 +385,7 @@ fun FoodItem(
                 }
                 .padding(16.dp),
             text = name,
-            fontSize = 18.sp,
+            fontSize = 20.sp,
             color = MaterialTheme.colorScheme.onBackground,
         )
 

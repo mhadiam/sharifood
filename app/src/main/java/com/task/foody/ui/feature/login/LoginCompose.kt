@@ -169,7 +169,7 @@ fun FoodyInputView(
                 Text(
                     text = placeHolder,
                     fontSize = fontSize,
-                    color = Gray
+                    color = MaterialTheme.colorScheme.secondary
                 )
             },
             colors = TextFieldDefaults.textFieldColors(
